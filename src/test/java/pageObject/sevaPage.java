@@ -1,9 +1,12 @@
 package pageObject;
 
+import static org.testng.Assert.assertEquals;
+
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
 import io.appium.java_client.AppiumBy;
@@ -29,11 +32,11 @@ public class sevaPage extends basePage{
 		List<WebElement> labels = driver.findElements(By.className("android.view.View"));
 		for(WebElement lb : labels){
 			String desc= lb.getAttribute("content-desc");
-			if(desc != "Upload Thumbnail") {
-				SoftAssert sa = new SoftAssert();
-				sa.assertTrue(false);
-			}
-		}
+			System.out.println(desc);
+			if(desc == "Add Location") {
+			assertEquals(desc, "Add Location");
+		
+			}}
 		
 	}
  

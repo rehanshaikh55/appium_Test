@@ -1,52 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-01T14:00:00 IST" name="Default suite" finished-at="2025-04-01T14:00:16 IST" duration-ms="16209">
+  <suite started-at="2025-04-01T16:51:40 IST" name="Suite" finished-at="2025-04-01T16:52:07 IST" duration-ms="27444">
     <groups>
     </groups>
-    <test started-at="2025-04-01T14:00:00 IST" name="Default test" finished-at="2025-04-01T14:00:16 IST" duration-ms="16209">
+    <test started-at="2025-04-01T16:51:40 IST" name="Test" finished-at="2025-04-01T16:52:07 IST" duration-ms="27444">
       <class name="testCases.TC002_verify_thumbnail_label">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC002_verify_thumbnail_label@1a482e36]" started-at="2025-04-01T14:00:00 IST" name="setup" finished-at="2025-04-01T14:00:08 IST" duration-ms="7686" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC002_verify_thumbnail_label@4f83df68]" started-at="2025-04-01T16:51:53 IST" name="setup" finished-at="2025-04-01T16:51:58 IST" duration-ms="5555" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_thumbnail_label()[pri:0, instance:testCases.TC002_verify_thumbnail_label@1a482e36]" started-at="2025-04-01T14:00:08 IST" name="verify_thumbnail_label" finished-at="2025-04-01T14:00:16 IST" duration-ms="8495" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+        <test-method signature="verify_thumbnail_label()[pri:0, instance:testCases.TC002_verify_thumbnail_label@4f83df68]" started-at="2025-04-01T16:51:58 IST" name="verify_thumbnail_label" finished-at="2025-04-01T16:52:07 IST" duration-ms="8988" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_thumbnail_label -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC002_verify_thumbnail_label@4f83df68]" started-at="2025-04-01T16:52:07 IST" name="teardown" finished-at="2025-04-01T16:52:07 IST" duration-ms="338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testCases.TC002_verify_thumbnail_label -->
+      <class name="testCases.TC001_notif_header_check">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC001_notif_header_check@67c27493]" started-at="2025-04-01T16:51:40 IST" name="setup" finished-at="2025-04-01T16:51:46 IST" duration-ms="5652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verfiy_notification_header_in_capital()[pri:0, instance:testCases.TC001_notif_header_check@67c27493]" started-at="2025-04-01T16:51:46 IST" name="verfiy_notification_header_in_capital" finished-at="2025-04-01T16:51:52 IST" duration-ms="6429" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[androidx.test.uiautomator.StaleObjectException
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [073f707e-616e-4440-a55d-d69bae7f7ce3, getElementAttribute {id=00000000-0000-01d1-0000-011b00000003, name=content-desc}]
-Capabilities {appium:appActivity: com.dotpitch.sanatanam.sana..., appium:appPackage: com.dotpitch.sanatanam.sana..., appium:automationName: uiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.dotpitch.sanatanam.sana..., appPackage: com.dotpitch.sanatanam.sana..., automationName: uiAutomator2, deviceName: sdk_gphone64_x86_64, platformName: ANDROID, platformVersion: 13, udid: emulator-5554}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Element: [[AndroidDriver:  on ANDROID (073f707e-616e-4440-a55d-d69bae7f7ce3)] -> class name: android.view.View]
-Session ID: 073f707e-616e-4440-a55d-d69bae7f7ce3]]>
+              <![CDATA[expected [NOTIFICATIONS] but found [Notifications]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [073f707e-616e-4440-a55d-d69bae7f7ce3, getElementAttribute {id=00000000-0000-01d1-0000-011b00000003, name=content-desc}]
-Capabilities {appium:appActivity: com.dotpitch.sanatanam.sana..., appium:appPackage: com.dotpitch.sanatanam.sana..., appium:automationName: uiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.dotpitch.sanatanam.sana..., appPackage: com.dotpitch.sanatanam.sana..., automationName: uiAutomator2, deviceName: sdk_gphone64_x86_64, platformName: ANDROID, platformVersion: 13, udid: emulator-5554}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Element: [[AndroidDriver:  on ANDROID (073f707e-616e-4440-a55d-d69bae7f7ce3)] -> class name: android.view.View]
-Session ID: 073f707e-616e-4440-a55d-d69bae7f7ce3
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:149)
-at pageObject.sevaPage.check_thumbnail_dis(sevaPage.java:31)
-at testCases.TC002_verify_thumbnail_label.verify_thumbnail_label(TC002_verify_thumbnail_label.java:20)
+              <![CDATA[java.lang.AssertionError: expected [NOTIFICATIONS] but found [Notifications]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at pageObject.notificationPage.checkNotiHeader(notificationPage.java:24)
+at testCases.TC001_notif_header_check.verfiy_notification_header_in_capital(TC001_notif_header_check.java:17)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -75,11 +68,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_thumbnail_label -->
-      </class> <!-- testCases.TC002_verify_thumbnail_label -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- verfiy_notification_header_in_capital -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC001_notif_header_check@67c27493]" started-at="2025-04-01T16:51:52 IST" name="teardown" finished-at="2025-04-01T16:51:53 IST" duration-ms="454" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testCases.TC001_notif_header_check -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

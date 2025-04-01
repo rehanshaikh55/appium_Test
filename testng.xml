@@ -4,6 +4,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="testCases.TC001_notif_header_check"/>
+      <class name="testCases.TC002_verify_thumbnail_label"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
