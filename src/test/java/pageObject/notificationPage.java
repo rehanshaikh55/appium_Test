@@ -10,17 +10,18 @@ import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
 
 public class notificationPage extends basePage {
-       
+
 	public notificationPage(AppiumDriver driver) {
 		super(driver);
 		// TODO Auto-generated constructor stub
 	}
 
-	//By notiHeader = AppiumBy.xpath("//android.view.View[@content-desc=\"Notifications\"]");
-	
+	// By notiHeader =
+	// AppiumBy.xpath("//android.view.View[@content-desc=\"Notifications\"]");
+
 	public void checkNotiHeader() {
-	     WebElement header= 	driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().description(\"Notifications\")"));
-	     String headerText = header.getAttribute("content-desc");
-	      Assert.assertEquals(headerText, "NOTIFICATIONS");
+		WebElement header = driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().description(\"Notifications\")"));
+		String headerText = header.getAttribute("content-desc");
+		Assert.assertEquals(headerText, "NOTIFICATIONS");
 	}
 }
