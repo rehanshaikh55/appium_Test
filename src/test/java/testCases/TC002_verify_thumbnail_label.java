@@ -2,8 +2,6 @@ package testCases;
 
 import org.testng.annotations.Test;
 
-import io.appium.java_client.AppiumDriver;
-import pageObject.basePage;
 import pageObject.homePage;
 import pageObject.sevaPage;
 import testBase.baseClass;
