@@ -8,47 +8,46 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">51,467</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">10,768</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCases.TC001_notif_header_check</td><td><a href="#m0">verfiy_notification_header_in_capital</a></td><td rowspan="1">1743674361876</td><td rowspan="1">3198</td></tr><tr class="failedodd"><td rowspan="1">testCases.TC002_verify_thumbnail_label</td><td><a href="#m1">verify_thumbnail_label</a></td><td rowspan="1">1743674371458</td><td rowspan="1">4352</td></tr><tr class="failedeven"><td rowspan="1">testCases.TC003_followersPage_verify</td><td><a href="#m2">follower_page_verify</a></td><td rowspan="1">1743674382170</td><td rowspan="1">3770</td></tr><tr class="failedodd"><td rowspan="1">testCases.TC004_navigate_homepage</td><td><a href="#m3">navigation_to_homepage</a></td><td rowspan="1">1743674392483</td><td rowspan="1">13039</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCases.TC001_notif_header_check</td><td><a href="#m0">verfiy_notification_header_in_capital</a></td><td rowspan="1">1743675605990</td><td rowspan="1">3730</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">testCases.TC001_notif_header_check#verfiy_notification_header_in_capital</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [NOTIFICATIONS] but found [Notifications]
+<h2>Default test</h2><h3 id="m0">testCases.TC001_notif_header_check#verfiy_notification_header_in_capital</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [NOTIFICATIONS] but found [Notifications]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
 	at pageObject.notificationPage.checkNotiHeader(notificationPage.java:22)
 	at testCases.TC001_notif_header_check.verfiy_notification_header_in_capital(TC001_notif_header_check.java:16)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testCases.TC002_verify_thumbnail_label#verify_thumbnail_label</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Upload thumbnail label is not present on the screen! expected [true] but found [false]
-	at pageObject.sevaPage.check_thumbnail_dis(sevaPage.java:45)
-	at testCases.TC002_verify_thumbnail_label.verify_thumbnail_label(TC002_verify_thumbnail_label.java:17)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testCases.TC003_followersPage_verify#follower_page_verify</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
-	at pageObject.homePage.clickProfile(homePage.java:45)
-	at testCases.TC003_followersPage_verify.follower_page_verify(TC003_followersPage_verify.java:13)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testCases.TC004_navigate_homepage#navigation_to_homepage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [e8e8d170-1d50-43fd-bb6b-9e03c92a931f, findElement {using=accessibility id, value=Home}]
-Capabilities {appium:appActivity: com.dotpitch.sanatanam.sana..., appium:appPackage: com.dotpitch.sanatanam.sana..., appium:automationName: uiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.dotpitch.sanatanam.sana..., appPackage: com.dotpitch.sanatanam.sana..., automationName: uiAutomator2, deviceName: Galaxy note 8, platformName: ANDROID, platformVersion: 13, udid: ce0717179aca141f017e}, appium:deviceApiLevel: 28, appium:deviceManufacturer: samsung, appium:deviceModel: SM-N950U, appium:deviceName: ce0717179aca141f017e, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2960, appium:deviceUDID: ce0717179aca141f017e, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 9, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:udid: ce0717179aca141f017e, appium:viewportRect: {height: 2876, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: e8e8d170-1d50-43fd-bb6b-9e03c92a931f
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at pageObject.homePage.verify_navigation_home(homePage.java:51)
-	at testCases.TC004_navigate_homepage.navigation_to_homepage(TC004_navigate_homepage.java:14)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

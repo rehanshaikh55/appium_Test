@@ -2,36 +2,50 @@
 <testng-results ignored="0" total="4" passed="0" failed="3" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-03T15:30:30 IST" name="Suite" finished-at="2025-04-03T15:31:06 IST" duration-ms="36388">
+  <suite started-at="2025-04-03T15:47:44 IST" name="Suite" finished-at="2025-04-03T15:48:35 IST" duration-ms="51102">
     <groups>
     </groups>
-    <test started-at="2025-04-03T15:30:30 IST" name="Test" finished-at="2025-04-03T15:31:06 IST" duration-ms="36388">
+    <test started-at="2025-04-03T15:47:44 IST" name="Test" finished-at="2025-04-03T15:48:35 IST" duration-ms="51102">
       <class name="testCases.TC003_followersPage_verify">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC003_followersPage_verify@235834f2]" started-at="2025-04-03T15:30:53 IST" name="setup" finished-at="2025-04-03T15:30:58 IST" duration-ms="5778" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="follower_page_verify()[pri:0, instance:testCases.TC003_followersPage_verify@235834f2]" started-at="2025-04-03T15:30:58 IST" name="follower_page_verify" finished-at="2025-04-03T15:31:04 IST" duration-ms="5605" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC003_followersPage_verify@235834f2]" started-at="2025-04-03T15:48:18 IST" name="setup" finished-at="2025-04-03T15:48:28 IST" duration-ms="10027" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[null]]>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: The instrumentation process cannot be initialized. Make sure the application under test does not crash and investigate the logcat output. 
+Host info: host: 'REHANSGAMINGDEV', ip: '192.168.1.70'
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[Capabilities {appium:appActivity: com.dotpitch.sanatanam.sana..., appium:appPackage: com.dotpitch.sanatanam.sana..., appium:automationName: uiAutomator2, appium:deviceName: Galaxy note 8, appium:platformVersion: 13, appium:udid: ce0717179aca141f017e, platformName: ANDROID}]}]
+Capabilities {appium:appActivity: com.dotpitch.sanatanam.sana..., appium:appPackage: com.dotpitch.sanatanam.sana..., appium:automationName: uiAutomator2, appium:deviceName: Galaxy note 8, appium:platformVersion: 13, appium:udid: ce0717179aca141f017e, platformName: ANDROID}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.fail(Assert.java:116)
-at pageObject.homePage.clickProfile(homePage.java:45)
-at testCases.TC003_followersPage_verify.follower_page_verify(TC003_followersPage_verify.java:13)
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: The instrumentation process cannot be initialized. Make sure the application under test does not crash and investigate the logcat output. 
+Host info: host: 'REHANSGAMINGDEV', ip: '192.168.1.70'
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[Capabilities {appium:appActivity: com.dotpitch.sanatanam.sana..., appium:appPackage: com.dotpitch.sanatanam.sana..., appium:automationName: uiAutomator2, appium:deviceName: Galaxy note 8, appium:platformVersion: 13, appium:udid: ce0717179aca141f017e, platformName: ANDROID}]}]
+Capabilities {appium:appActivity: com.dotpitch.sanatanam.sana..., appium:appPackage: com.dotpitch.sanatanam.sana..., appium:automationName: uiAutomator2, appium:deviceName: Galaxy note 8, appium:platformVersion: 13, appium:udid: ce0717179aca141f017e, platformName: ANDROID}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:178)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:313)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:113)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:109)
+at testBase.baseClass.setup(baseClass.java:28)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:741)
 at org.testng.TestRunner.run(TestRunner.java:616)
@@ -54,33 +68,104 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="follower_page_verify()[pri:0, instance:testCases.TC003_followersPage_verify@235834f2]" started-at="2025-04-03T15:48:28 IST" name="follower_page_verify" finished-at="2025-04-03T15:48:28 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: The instrumentation process cannot be initialized. Make sure the application under test does not crash and investigate the logcat output. 
+Host info: host: 'REHANSGAMINGDEV', ip: '192.168.1.70'
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[Capabilities {appium:appActivity: com.dotpitch.sanatanam.sana..., appium:appPackage: com.dotpitch.sanatanam.sana..., appium:automationName: uiAutomator2, appium:deviceName: Galaxy note 8, appium:platformVersion: 13, appium:udid: ce0717179aca141f017e, platformName: ANDROID}]}]
+Capabilities {appium:appActivity: com.dotpitch.sanatanam.sana..., appium:appPackage: com.dotpitch.sanatanam.sana..., appium:automationName: uiAutomator2, appium:deviceName: Galaxy note 8, appium:platformVersion: 13, appium:udid: ce0717179aca141f017e, platformName: ANDROID}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: The instrumentation process cannot be initialized. Make sure the application under test does not crash and investigate the logcat output. 
+Host info: host: 'REHANSGAMINGDEV', ip: '192.168.1.70'
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[Capabilities {appium:appActivity: com.dotpitch.sanatanam.sana..., appium:appPackage: com.dotpitch.sanatanam.sana..., appium:automationName: uiAutomator2, appium:deviceName: Galaxy note 8, appium:platformVersion: 13, appium:udid: ce0717179aca141f017e, platformName: ANDROID}]}]
+Capabilities {appium:appActivity: com.dotpitch.sanatanam.sana..., appium:appPackage: com.dotpitch.sanatanam.sana..., appium:automationName: uiAutomator2, appium:deviceName: Galaxy note 8, appium:platformVersion: 13, appium:udid: ce0717179aca141f017e, platformName: ANDROID}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:178)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:313)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:113)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:109)
+at testBase.baseClass.setup(baseClass.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- follower_page_verify -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC003_followersPage_verify@235834f2]" started-at="2025-04-03T15:31:04 IST" name="teardown" finished-at="2025-04-03T15:31:05 IST" duration-ms="629" status="FAIL">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC003_followersPage_verify@235834f2]" started-at="2025-04-03T15:48:28 IST" name="teardown" finished-at="2025-04-03T15:48:28 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testCases.TC003_followersPage_verify -->
+      <class name="testCases.TC004_navigate_homepage">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC004_navigate_homepage@5656be13]" started-at="2025-04-03T15:48:28 IST" name="setup" finished-at="2025-04-03T15:48:34 IST" duration-ms="6063" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="navigation_to_homepage()[pri:0, instance:testCases.TC004_navigate_homepage@5656be13]" started-at="2025-04-03T15:48:34 IST" name="navigation_to_homepage" finished-at="2025-04-03T15:48:34 IST" duration-ms="5" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\shaik\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s ce0717179aca141f017e shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 20'; Command output: cmd: Can't find service: settings
-cmd: Can't find service: settings
-
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [cdb4f770-7ca8-41aa-8742-424ba79fd8b0, quit {}]
+Command: [81fd4c56-7609-4660-b84d-baa363f58831, findElement {value=Seva, using=accessibility id}]
 Capabilities {appium:appActivity: com.dotpitch.sanatanam.sana..., appium:appPackage: com.dotpitch.sanatanam.sana..., appium:automationName: uiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.dotpitch.sanatanam.sana..., appPackage: com.dotpitch.sanatanam.sana..., automationName: uiAutomator2, deviceName: Galaxy note 8, platformName: ANDROID, platformVersion: 13, udid: ce0717179aca141f017e}, appium:deviceApiLevel: 28, appium:deviceManufacturer: samsung, appium:deviceModel: SM-N950U, appium:deviceName: ce0717179aca141f017e, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2960, appium:deviceUDID: ce0717179aca141f017e, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 9, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:udid: ce0717179aca141f017e, appium:viewportRect: {height: 2876, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: cdb4f770-7ca8-41aa-8742-424ba79fd8b0]]>
+Session ID: 81fd4c56-7609-4660-b84d-baa363f58831]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\shaik\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s ce0717179aca141f017e shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 20'; Command output: cmd: Can't find service: settings
-cmd: Can't find service: settings
-
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [cdb4f770-7ca8-41aa-8742-424ba79fd8b0, quit {}]
+Command: [81fd4c56-7609-4660-b84d-baa363f58831, findElement {value=Seva, using=accessibility id}]
 Capabilities {appium:appActivity: com.dotpitch.sanatanam.sana..., appium:appPackage: com.dotpitch.sanatanam.sana..., appium:automationName: uiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.dotpitch.sanatanam.sana..., appPackage: com.dotpitch.sanatanam.sana..., automationName: uiAutomator2, deviceName: Galaxy note 8, platformName: ANDROID, platformVersion: 13, udid: ce0717179aca141f017e}, appium:deviceApiLevel: 28, appium:deviceManufacturer: samsung, appium:deviceModel: SM-N950U, appium:deviceName: ce0717179aca141f017e, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2960, appium:deviceUDID: ce0717179aca141f017e, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 9, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:udid: ce0717179aca141f017e, appium:viewportRect: {height: 2876, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: cdb4f770-7ca8-41aa-8742-424ba79fd8b0
+Session ID: 81fd4c56-7609-4660-b84d-baa363f58831
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -90,19 +175,22 @@ at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpRespo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
 at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:235)
-at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:446)
-at testBase.baseClass.teardown(baseClass.java:38)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at pageObject.homePage.clickSevaandback(homePage.java:32)
+at testCases.TC004_navigate_homepage.navigation_to_homepage(TC004_navigate_homepage.java:13)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassConfigurations(TestMethodWorker.java:238)
-at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:223)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:137)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:741)
 at org.testng.TestRunner.run(TestRunner.java:616)
@@ -128,173 +216,51 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testCases.TC003_followersPage_verify -->
-      <class name="testCases.TC004_navigate_homepage">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC004_navigate_homepage@5656be13]" started-at="2025-04-03T15:31:05 IST" name="setup" finished-at="2025-04-03T15:31:06 IST" duration-ms="1483" status="FAIL">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\shaik\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s ce0717179aca141f017e shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 20'; Command output: cmd: Can't find service: settings
-cmd: Can't find service: settings
-cmd: Can't find service: settings
- 
-Host info: host: 'REHANSGAMINGDEV', ip: '192.168.1.70'
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[Capabilities {appium:appActivity: com.dotpitch.sanatanam.sana..., appium:appPackage: com.dotpitch.sanatanam.sana..., appium:automationName: uiAutomator2, appium:deviceName: Galaxy note 8, appium:platformVersion: 13, appium:udid: ce0717179aca141f017e, platformName: ANDROID}]}]
-Capabilities {appium:appActivity: com.dotpitch.sanatanam.sana..., appium:appPackage: com.dotpitch.sanatanam.sana..., appium:automationName: uiAutomator2, appium:deviceName: Galaxy note 8, appium:platformVersion: 13, appium:udid: ce0717179aca141f017e, platformName: ANDROID}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\shaik\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s ce0717179aca141f017e shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 20'; Command output: cmd: Can't find service: settings
-cmd: Can't find service: settings
-cmd: Can't find service: settings
- 
-Host info: host: 'REHANSGAMINGDEV', ip: '192.168.1.70'
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[Capabilities {appium:appActivity: com.dotpitch.sanatanam.sana..., appium:appPackage: com.dotpitch.sanatanam.sana..., appium:automationName: uiAutomator2, appium:deviceName: Galaxy note 8, appium:platformVersion: 13, appium:udid: ce0717179aca141f017e, platformName: ANDROID}]}]
-Capabilities {appium:appActivity: com.dotpitch.sanatanam.sana..., appium:appPackage: com.dotpitch.sanatanam.sana..., appium:automationName: uiAutomator2, appium:deviceName: Galaxy note 8, appium:platformVersion: 13, appium:udid: ce0717179aca141f017e, platformName: ANDROID}
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:178)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:313)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:113)
-at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:109)
-at testBase.baseClass.setup(baseClass.java:28)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="navigation_to_homepage()[pri:0, instance:testCases.TC004_navigate_homepage@5656be13]" started-at="2025-04-03T15:31:06 IST" name="navigation_to_homepage" finished-at="2025-04-03T15:31:06 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\shaik\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s ce0717179aca141f017e shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 20'; Command output: cmd: Can't find service: settings
-cmd: Can't find service: settings
-cmd: Can't find service: settings
- 
-Host info: host: 'REHANSGAMINGDEV', ip: '192.168.1.70'
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[Capabilities {appium:appActivity: com.dotpitch.sanatanam.sana..., appium:appPackage: com.dotpitch.sanatanam.sana..., appium:automationName: uiAutomator2, appium:deviceName: Galaxy note 8, appium:platformVersion: 13, appium:udid: ce0717179aca141f017e, platformName: ANDROID}]}]
-Capabilities {appium:appActivity: com.dotpitch.sanatanam.sana..., appium:appPackage: com.dotpitch.sanatanam.sana..., appium:automationName: uiAutomator2, appium:deviceName: Galaxy note 8, appium:platformVersion: 13, appium:udid: ce0717179aca141f017e, platformName: ANDROID}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\shaik\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s ce0717179aca141f017e shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 20'; Command output: cmd: Can't find service: settings
-cmd: Can't find service: settings
-cmd: Can't find service: settings
- 
-Host info: host: 'REHANSGAMINGDEV', ip: '192.168.1.70'
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[Capabilities {appium:appActivity: com.dotpitch.sanatanam.sana..., appium:appPackage: com.dotpitch.sanatanam.sana..., appium:automationName: uiAutomator2, appium:deviceName: Galaxy note 8, appium:platformVersion: 13, appium:udid: ce0717179aca141f017e, platformName: ANDROID}]}]
-Capabilities {appium:appActivity: com.dotpitch.sanatanam.sana..., appium:appPackage: com.dotpitch.sanatanam.sana..., appium:automationName: uiAutomator2, appium:deviceName: Galaxy note 8, appium:platformVersion: 13, appium:udid: ce0717179aca141f017e, platformName: ANDROID}
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:178)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:313)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:113)
-at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:109)
-at testBase.baseClass.setup(baseClass.java:28)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- navigation_to_homepage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC004_navigate_homepage@5656be13]" started-at="2025-04-03T15:31:06 IST" name="teardown" finished-at="2025-04-03T15:31:06 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC004_navigate_homepage@5656be13]" started-at="2025-04-03T15:48:34 IST" name="teardown" finished-at="2025-04-03T15:48:35 IST" duration-ms="457" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testCases.TC004_navigate_homepage -->
       <class name="testCases.TC002_verify_thumbnail_label">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC002_verify_thumbnail_label@3270d194]" started-at="2025-04-03T15:30:41 IST" name="setup" finished-at="2025-04-03T15:30:47 IST" duration-ms="5930" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC002_verify_thumbnail_label@3270d194]" started-at="2025-04-03T15:48:05 IST" name="setup" finished-at="2025-04-03T15:48:11 IST" duration-ms="6068" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_thumbnail_label()[pri:0, instance:testCases.TC002_verify_thumbnail_label@3270d194]" started-at="2025-04-03T15:30:47 IST" name="verify_thumbnail_label" finished-at="2025-04-03T15:30:52 IST" duration-ms="4931" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="verify_thumbnail_label()[pri:0, instance:testCases.TC002_verify_thumbnail_label@3270d194]" started-at="2025-04-03T15:48:11 IST" name="verify_thumbnail_label" finished-at="2025-04-03T15:48:18 IST" duration-ms="6824" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Upload thumbnail label is not present on the screen! expected [true] but found [false]]]>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [ebb8265e-ed1e-4019-9bf2-d2356262d824, findElement {value=//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.ImageView[2], using=xpath}]
+Capabilities {appium:appActivity: com.dotpitch.sanatanam.sana..., appium:appPackage: com.dotpitch.sanatanam.sana..., appium:automationName: uiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.dotpitch.sanatanam.sana..., appPackage: com.dotpitch.sanatanam.sana..., automationName: uiAutomator2, deviceName: Galaxy note 8, platformName: ANDROID, platformVersion: 13, udid: ce0717179aca141f017e}, appium:deviceApiLevel: 28, appium:deviceManufacturer: samsung, appium:deviceModel: SM-N950U, appium:deviceName: ce0717179aca141f017e, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2960, appium:deviceUDID: ce0717179aca141f017e, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 9, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:udid: ce0717179aca141f017e, appium:viewportRect: {height: 2876, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: ebb8265e-ed1e-4019-9bf2-d2356262d824]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Upload thumbnail label is not present on the screen! expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at pageObject.sevaPage.check_thumbnail_dis(sevaPage.java:45)
-at testCases.TC002_verify_thumbnail_label.verify_thumbnail_label(TC002_verify_thumbnail_label.java:17)
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [ebb8265e-ed1e-4019-9bf2-d2356262d824, findElement {value=//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.ImageView[2], using=xpath}]
+Capabilities {appium:appActivity: com.dotpitch.sanatanam.sana..., appium:appPackage: com.dotpitch.sanatanam.sana..., appium:automationName: uiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.dotpitch.sanatanam.sana..., appPackage: com.dotpitch.sanatanam.sana..., automationName: uiAutomator2, deviceName: Galaxy note 8, platformName: ANDROID, platformVersion: 13, udid: ce0717179aca141f017e}, appium:deviceApiLevel: 28, appium:deviceManufacturer: samsung, appium:deviceModel: SM-N950U, appium:deviceName: ce0717179aca141f017e, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2960, appium:deviceUDID: ce0717179aca141f017e, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 9, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:udid: ce0717179aca141f017e, appium:viewportRect: {height: 2876, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: ebb8265e-ed1e-4019-9bf2-d2356262d824
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at pageObject.sevaPage.go_to_createSeva(sevaPage.java:19)
+at testCases.TC002_verify_thumbnail_label.verify_thumbnail_label(TC002_verify_thumbnail_label.java:16)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -327,34 +293,55 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_thumbnail_label -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC002_verify_thumbnail_label@3270d194]" started-at="2025-04-03T15:30:52 IST" name="teardown" finished-at="2025-04-03T15:30:53 IST" duration-ms="421" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC002_verify_thumbnail_label@3270d194]" started-at="2025-04-03T15:48:18 IST" name="teardown" finished-at="2025-04-03T15:48:18 IST" duration-ms="338" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testCases.TC002_verify_thumbnail_label -->
       <class name="testCases.TC001_notif_header_check">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC001_notif_header_check@7b2bbc3]" started-at="2025-04-03T15:30:30 IST" name="setup" finished-at="2025-04-03T15:30:37 IST" duration-ms="7316" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC001_notif_header_check@7b2bbc3]" started-at="2025-04-03T15:47:44 IST" name="setup" finished-at="2025-04-03T15:47:51 IST" duration-ms="7611" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verfiy_notification_header_in_capital()[pri:0, instance:testCases.TC001_notif_header_check@7b2bbc3]" started-at="2025-04-03T15:30:37 IST" name="verfiy_notification_header_in_capital" finished-at="2025-04-03T15:30:41 IST" duration-ms="3772" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="verfiy_notification_header_in_capital()[pri:0, instance:testCases.TC001_notif_header_check@7b2bbc3]" started-at="2025-04-03T15:47:51 IST" name="verfiy_notification_header_in_capital" finished-at="2025-04-03T15:48:04 IST" duration-ms="13158" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[expected [NOTIFICATIONS] but found [Notifications]]]>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [4ac9e727-cbc0-403c-a67c-91dbcfdbb224, findElement {value=new UiSelector().description("Notifications"), using=-android uiautomator}]
+Capabilities {appium:appActivity: com.dotpitch.sanatanam.sana..., appium:appPackage: com.dotpitch.sanatanam.sana..., appium:automationName: uiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.dotpitch.sanatanam.sana..., appPackage: com.dotpitch.sanatanam.sana..., automationName: uiAutomator2, deviceName: Galaxy note 8, platformName: ANDROID, platformVersion: 13, udid: ce0717179aca141f017e}, appium:deviceApiLevel: 28, appium:deviceManufacturer: samsung, appium:deviceModel: SM-N950U, appium:deviceName: ce0717179aca141f017e, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2960, appium:deviceUDID: ce0717179aca141f017e, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 9, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:udid: ce0717179aca141f017e, appium:viewportRect: {height: 2876, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 4ac9e727-cbc0-403c-a67c-91dbcfdbb224]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [NOTIFICATIONS] but found [Notifications]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at pageObject.notificationPage.checkNotiHeader(notificationPage.java:22)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [4ac9e727-cbc0-403c-a67c-91dbcfdbb224, findElement {value=new UiSelector().description("Notifications"), using=-android uiautomator}]
+Capabilities {appium:appActivity: com.dotpitch.sanatanam.sana..., appium:appPackage: com.dotpitch.sanatanam.sana..., appium:automationName: uiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.dotpitch.sanatanam.sana..., appPackage: com.dotpitch.sanatanam.sana..., automationName: uiAutomator2, deviceName: Galaxy note 8, platformName: ANDROID, platformVersion: 13, udid: ce0717179aca141f017e}, appium:deviceApiLevel: 28, appium:deviceManufacturer: samsung, appium:deviceModel: SM-N950U, appium:deviceName: ce0717179aca141f017e, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2960, appium:deviceUDID: ce0717179aca141f017e, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 9, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:udid: ce0717179aca141f017e, appium:viewportRect: {height: 2876, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 4ac9e727-cbc0-403c-a67c-91dbcfdbb224
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at pageObject.notificationPage.checkNotiHeader(notificationPage.java:20)
 at testCases.TC001_notif_header_check.verfiy_notification_header_in_capital(TC001_notif_header_check.java:16)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -388,11 +375,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verfiy_notification_header_in_capital -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC001_notif_header_check@7b2bbc3]" started-at="2025-04-03T15:30:41 IST" name="teardown" finished-at="2025-04-03T15:30:41 IST" duration-ms="487" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC001_notif_header_check@7b2bbc3]" started-at="2025-04-03T15:48:04 IST" name="teardown" finished-at="2025-04-03T15:48:05 IST" duration-ms="506" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
