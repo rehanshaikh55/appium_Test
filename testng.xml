@@ -5,7 +5,8 @@
     <classes>
       <class name="testCases.TC001_notif_header_check"/>
       <class name="testCases.TC002_verify_thumbnail_label"/>
-      <class name="testCases.TC003_followersPage_verify"></class>
+      <class name="testCases.TC003_followersPage_verify"/>
+      <class name="testCases.TC004_navigate_homepage"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

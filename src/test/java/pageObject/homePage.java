@@ -28,6 +28,13 @@ public class homePage extends basePage {
 				.click();
 		
 	}
+	public void clickSevaandback() {
+		driver.findElement(
+				AppiumBy.accessibilityId("Seva"))
+				.click();
+		driver.navigate().back();
+		
+	}
 	public void clickProfile() {
 		driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().className(\"android.widget.ImageView\").instance(1)")).click();
 		driver.findElement(AppiumBy.accessibilityId("Welcome,\nKedarnath Temple")).click();
@@ -37,5 +44,10 @@ public class homePage extends basePage {
 	   if(followerPage.size() <= 2) {
 		   Assert.fail();
 	   }
+	}
+	
+	
+	public void verify_navigation_home() {
+		Assert.assertTrue(driver.findElement(AppiumBy.accessibilityId("Home")).isDisplayed());
 	}
 }
