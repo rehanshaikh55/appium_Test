@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TC004_navigate_homepage">
+      <class name="testCases.TC001_notif_header_check">
         <methods>
           <include name="teardown"/>
-          <include name="navigation_to_homepage"/>
           <include name="setup"/>
+          <include name="verfiy_notification_header_in_capital"/>
         </methods>
-      </class> <!-- testCases.TC004_navigate_homepage -->
+      </class> <!-- testCases.TC001_notif_header_check -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

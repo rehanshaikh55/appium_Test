@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 4 failed,   </span>
+                    <span class="method-stats">4 methods, 3 failed,  1 skipped,  </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -108,11 +108,6 @@
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC004_navigate_homepage" class="method navigator-link" hash-for-method="navigation_to_homepage">navigation_to_homepage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testCases.TC001_notif_header_check" class="method navigator-link" hash-for-method="verfiy_notification_header_in_capital">verfiy_notification_header_in_capital</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -122,6 +117,20 @@
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC004_navigate_homepage" class="method navigator-link" hash-for-method="navigation_to_homepage">navigation_to_homepage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -144,25 +153,9 @@
                   <a name="verify_thumbnail_label">
                   </a> <!-- verify_thumbnail_label -->
                   <span class="method-name">verify_thumbnail_label</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: The element &apos;By.xpath: //android.widget.FrameLayout[@resource-id=&quot;android:id/content&quot;]/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.ImageView[2]&apos; is not linked to the same object in DOM anymore
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [b4e3c818-bf85-45eb-ad20-c0dbe7069964, clickElement {id=00000000-0000-006a-0000-00aa00000000}]
-Capabilities {appium:appActivity: com.dotpitch.sanatanam.sana..., appium:appPackage: com.dotpitch.sanatanam.sana..., appium:automationName: uiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.dotpitch.sanatanam.sana..., appPackage: com.dotpitch.sanatanam.sana..., automationName: uiAutomator2, deviceName: Galaxy note 8, platformName: ANDROID, platformVersion: 13, udid: ce0717179aca141f017e}, appium:deviceApiLevel: 28, appium:deviceManufacturer: samsung, appium:deviceModel: SM-N950U, appium:deviceName: ce0717179aca141f017e, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2960, appium:deviceUDID: ce0717179aca141f017e, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 9, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:udid: ce0717179aca141f017e, appium:viewportRect: {height: 2876, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Element: [[AndroidDriver:  on ANDROID (b4e3c818-bf85-45eb-ad20-c0dbe7069964)] -&gt; xpath: //android.widget.FrameLayout[@resource-id=&quot;android:id/content&quot;]/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.ImageView[2]]
-Session ID: b4e3c818-bf85-45eb-ad20-c0dbe7069964
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at pageObject.sevaPage.go_to_createSeva(sevaPage.java:21)
-	at testCases.TC002_verify_thumbnail_label.verify_thumbnail_label(TC002_verify_thumbnail_label.java:16)
+                  <div class="stack-trace">java.lang.AssertionError: Upload thumbnail label is not present on the screen! expected [true] but found [false]
+	at pageObject.sevaPage.check_thumbnail_dis(sevaPage.java:45)
+	at testCases.TC002_verify_thumbnail_label.verify_thumbnail_label(TC002_verify_thumbnail_label.java:17)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -212,9 +205,9 @@ Session ID: b4e3c818-bf85-45eb-ad20-c0dbe7069964
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">testCases.TC004_navigate_homepage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -223,33 +216,35 @@ Session ID: b4e3c818-bf85-45eb-ad20-c0dbe7069964
                   <a name="navigation_to_homepage">
                   </a> <!-- navigation_to_homepage -->
                   <span class="method-name">navigation_to_homepage</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\shaik\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s ce0717179aca141f017e shell &apos;settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy&apos;&apos; exited with code 20&apos;; Command output: cmd: Can&apos;t find service: settings
+cmd: Can&apos;t find service: settings
+cmd: Can&apos;t find service: settings
+ 
+Host info: host: &apos;REHANSGAMINGDEV&apos;, ip: &apos;192.168.1.70&apos;
 Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [5896ae5f-aa25-4f90-b1ec-41c62198f747, findElement {using=accessibility id, value=Home}]
-Capabilities {appium:appActivity: com.dotpitch.sanatanam.sana..., appium:appPackage: com.dotpitch.sanatanam.sana..., appium:automationName: uiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.dotpitch.sanatanam.sana..., appPackage: com.dotpitch.sanatanam.sana..., automationName: uiAutomator2, deviceName: Galaxy note 8, platformName: ANDROID, platformVersion: 13, udid: ce0717179aca141f017e}, appium:deviceApiLevel: 28, appium:deviceManufacturer: samsung, appium:deviceModel: SM-N950U, appium:deviceName: ce0717179aca141f017e, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2960, appium:deviceUDID: ce0717179aca141f017e, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 9, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:udid: ce0717179aca141f017e, appium:viewportRect: {height: 2876, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 5896ae5f-aa25-4f90-b1ec-41c62198f747
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+Command: [null, newSession {capabilities=[Capabilities {appium:appActivity: com.dotpitch.sanatanam.sana..., appium:appPackage: com.dotpitch.sanatanam.sana..., appium:automationName: uiAutomator2, appium:deviceName: Galaxy note 8, appium:platformVersion: 13, appium:udid: ce0717179aca141f017e, platformName: ANDROID}]}]
+Capabilities {appium:appActivity: com.dotpitch.sanatanam.sana..., appium:appPackage: com.dotpitch.sanatanam.sana..., appium:automationName: uiAutomator2, appium:deviceName: Galaxy note 8, appium:platformVersion: 13, appium:udid: ce0717179aca141f017e, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:178)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at pageObject.homePage.verify_navigation_home(homePage.java:51)
-	at testCases.TC004_navigate_homepage.navigation_to_homepage(TC004_navigate_homepage.java:14)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:313)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:113)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at testBase.baseClass.setup(baseClass.java:28)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 32 stack frames
+... Removed 27 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -307,26 +302,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'navigation_to_homepage')
-data.setCell(0, 2, 'testCases.TC004_navigate_homepage')
-data.setCell(0, 3, 14118);
+data.setCell(0, 1, 'follower_page_verify')
+data.setCell(0, 2, 'testCases.TC003_followersPage_verify')
+data.setCell(0, 3, 5605);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'follower_page_verify')
-data.setCell(1, 2, 'testCases.TC003_followersPage_verify')
-data.setCell(1, 3, 6884);
+data.setCell(1, 1, 'verify_thumbnail_label')
+data.setCell(1, 2, 'testCases.TC002_verify_thumbnail_label')
+data.setCell(1, 3, 4931);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verify_thumbnail_label')
-data.setCell(2, 2, 'testCases.TC002_verify_thumbnail_label')
-data.setCell(2, 3, 6505);
+data.setCell(2, 1, 'verfiy_notification_header_in_capital')
+data.setCell(2, 2, 'testCases.TC001_notif_header_check')
+data.setCell(2, 3, 3772);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verfiy_notification_header_in_capital')
-data.setCell(3, 2, 'testCases.TC001_notif_header_check')
-data.setCell(3, 3, 3463);
+data.setCell(3, 1, 'navigation_to_homepage')
+data.setCell(3, 2, 'testCases.TC004_navigate_homepage')
+data.setCell(3, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -361,63 +356,57 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verfiy_notification_header_in_capital</span>
-                <span class="method-start">11878 ms</span>
+                <span class="method-start">7323 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">15345 ms</span>
+                <span class="method-start">11099 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC002_verify_thumbnail_label</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">15848 ms</span>
+                <span class="method-start">11587 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verify_thumbnail_label</span>
-                <span class="method-start">22216 ms</span>
+                <span class="method-start">17518 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">28724 ms</span>
+                <span class="method-start">22450 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC003_followersPage_verify</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">29172 ms</span>
+                <span class="method-start">22872 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">follower_page_verify</span>
-                <span class="method-start">34939 ms</span>
+                <span class="method-start">28650 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">teardown</span>
-                <span class="method-start">41824 ms</span>
+                <span class="method-start">34255 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC004_navigate_homepage</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup</span>
-                <span class="method-start">42377 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">navigation_to_homepage</span>
-                <span class="method-start">48309 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">62427 ms</span>
-              </div> <!-- configuration-class after -->
+                <span class="method-name">setup</span>
+                <span class="method-start">34887 ms</span>
+              </div> <!-- configuration-class before -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
