@@ -35,6 +35,10 @@ public class homePage extends basePage {
 		driver.navigate().back();
 		
 	}
+	public void homepageCheck() {
+		
+		Assert.assertTrue(driver.findElement(AppiumBy.xpath("//android.widget.ScrollView/android.widget.ImageView[1]")).isDisplayed());
+	}
 	public void clickProfile() {
 		driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().className(\"android.widget.ImageView\").instance(1)")).click();
 		driver.findElement(AppiumBy.accessibilityId("Welcome,\nKedarnath Temple")).click();

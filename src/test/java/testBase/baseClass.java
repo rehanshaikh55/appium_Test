@@ -3,11 +3,14 @@ package testBase;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
+import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 
@@ -29,7 +32,36 @@ public class baseClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 		System.out.println("application started");
+		
+		
+		
+		driver.findElement(AppiumBy.xpath("//android.widget.EditText")).click();
+		driver.findElement(AppiumBy.xpath("//android.widget.EditText")).sendKeys("1111111111");
+		driver.findElement(AppiumBy.accessibilityId("Login")).click();
+		 
+	
+		String otpText = driver.findElement(AppiumBy.xpath("//android.widget.Toast")).getText();
+		Pattern pattern = Pattern.compile("\\d+");
+		Matcher matcher = pattern.matcher(otpText);
 
+		String otp = ""; // initialize otp
+		if (matcher.find()) {
+		    otp = matcher.group(); // extract first number match
+		    System.out.println("OTP: " + otp);
+		} else {
+		    System.out.println("No OTP found in the toast message.");
+		}
+
+		// Send OTP to the input field
+		driver.findElement(AppiumBy.androidUIAutomator(
+		    "new UiSelector().className(\"android.widget.EditText\").instance(1)")
+		).click();
+
+		driver.findElement(AppiumBy.androidUIAutomator(
+			    "new UiSelector().className(\"android.widget.EditText\").instance(1)")
+			).sendKeys(otp);
+		
+		driver.findElement(AppiumBy.accessibilityId("Login")).click();
 	}
 
 	@AfterClass

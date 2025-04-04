@@ -6,8 +6,8 @@
       <class name="testCases.TC001_notif_header_check">
         <methods>
           <include name="teardown"/>
+          <include name="loginTest"/>
           <include name="setup"/>
-          <include name="verfiy_notification_header_in_capital"/>
         </methods>
       </class> <!-- testCases.TC001_notif_header_check -->
     </classes>
