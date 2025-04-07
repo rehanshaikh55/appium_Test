@@ -29,7 +29,7 @@ public class baseClass {
 		cap.setCapability("appium:appActivity", "com.dotpitch.sanatanam.sanatanam.MainActivity");
 
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), cap);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
 		System.out.println("application started");
 		
