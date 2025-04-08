@@ -18,6 +18,7 @@ public class TC001_notif_header_check extends baseClass {
 	public void verfiy_notification_header_in_capital() {
 		homePage hp = new homePage(driver);
 		hp.clickNoti();
+		System.out.println("Notification header style Test");
 		notificationPage np = new notificationPage(driver);
 		np.checkNotiHeader();
 	}
